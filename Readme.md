@@ -81,7 +81,27 @@ Available Commands https://github.com/ycm-core/YouCompleteMe#goto-commands
  * Go Back: **Ctrl+o** 
  * Go Forward **Ctrl+i**
 
+### Python Debugging with PUDB
+
+[PUDB](https://github.com/inducer/pudb) is a full-featured Python Commandline debugger
+that is much more user friendly than pdb
+
+### Attaching to a process
+
+PUDB can be used to debug an already launched python process, using
+https://github.com/kadeng/pybugg
+
+#### Running a Pytest under PUDB
+
+Example Commandline: Run a pytest, break into pudb commandline debugger on test enter
+
+```bash
+pytest --trace --pdbcls pudb.debugger:Debugger test/inductor/test_fused_attention.py -k test_sdpa_rewriter_9
+```
+
+
 ## TO DO
 
+ * **More Plugins**: https://hackingcpp.com/dev/vim_plugins.html
  * **Debugging**: See [Vimspector](https://github.com/puremourning/vimspector)
 
