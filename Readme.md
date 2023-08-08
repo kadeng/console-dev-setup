@@ -53,8 +53,8 @@ pide my_session_name
 Always start with **ctrl+a** followed by a command
 
  * **Detach Session**: **ctrl+a d**
- * **Split window: **ctrl+a -** and **ctrl+a +**
-
+ * **Split window**: **ctrl+a -** and **ctrl+a +**
+ * **Paste**: **ctrl+a v**
 See **local/tmux.conf** for more
 
 ##  How To
@@ -79,4 +79,7 @@ Available Commands https://github.com/ycm-core/YouCompleteMe#goto-commands
 
  * Mapped **:YcmCompleter Goto** to **<CTRL+g>**
 
+## TO DO
+
+ * **Debugging**: See [Vimspector](https://github.com/puremourning/vimspector)
 
