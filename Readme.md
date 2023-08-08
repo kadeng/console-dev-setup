@@ -54,7 +54,7 @@ Always start with **ctrl+a** followed by a command
 
  * **Detach Session**: **ctrl+a d**
  * **Split window**: **ctrl+a -** and **ctrl+a +**
- * **Paste**: **ctrl+a v**
+ * **Paste**: **ctrl+p v**
 See **local/tmux.conf** for more
 
 ##  How To
