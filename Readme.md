@@ -78,6 +78,8 @@ See https://vim.fandom.com/wiki/Cut/copy_and_paste_using_visual_selection
 Available Commands https://github.com/ycm-core/YouCompleteMe#goto-commands
 
  * Mapped **:YcmCompleter Goto** to **<CTRL+g>**
+ * Go Back: **Ctrl+o** 
+ * Go Forward **Ctrl+i**
 
 ## TO DO
 
