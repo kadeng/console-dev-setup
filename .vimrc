@@ -30,6 +30,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'puremourning/vimspector'
 Plugin 'liuchengxu/vim-clap'
 Plugin 'cpiger/NeoDebug'
+Plugin 'preservim/nerdtree'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -48,7 +50,16 @@ filetype plugin indent on    " required
 
 noremap <C-g> :YcmCompleter GoTo<CR>
 
+nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
 let g:vimspector_base_dir='/home/klondenberg/.vim/bundle/vimspector'
 set number
 let g:neodbg_gdb_path='/usr/local/cuda/bin/cuda-gdb'
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
+    \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
+
 

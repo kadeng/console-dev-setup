@@ -99,6 +99,13 @@ Example Commandline: Run a pytest, break into pudb commandline debugger on test 
 pytest --trace --pdbcls pudb.debugger:Debugger test/inductor/test_fused_attention.py -k test_sdpa_rewriter_9
 ```
 
+#### More Installed Plugins
+
+ * [NeoDebug - GDB Frontend](https://github.com/cpiger/NeoDebug)
+ * [NERDTree](https://github.com/preservim/nerdtree) File Tree
+ * [Fugitive](https://github.com/tpope/vim-fugitive) git integration (incl. diff )
+
+
 
 ## TO DO
 
